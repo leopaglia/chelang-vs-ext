@@ -1,0 +1,32 @@
+{
+    "name": "chelang",
+    "displayName": "Che Lang",
+    "description": "Syntax Highlighting e iconos para Chelang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "chelang",
+            "aliases": ["chelang", "chelang"],
+            "extensions": [".che"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "chelang",
+            "scopeName": "source.che",
+            "path": "./syntaxes/chelang.tmLanguage.json"
+        }],
+        "iconThemes": [
+            {
+              "id": "chelang",
+              "label": "Chelang icons",
+              "path": "./chelang-icon-theme.json"
+            }
+          ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.che",
+	"name": "chelang",
+	"fileTypes": ["che"],
+	"foldingStartMarker": "\n\t",
+	"foldingStopMarker": "\n",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#keywords" },
+		{ "include": "#storage" },
+		{ "include": "#singlequoted-strings" },
+		{ "include": "#doublequoted-strings" },
+		{ "include": "#support-constants" },
+		{ "include": "#support-functions" }
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line.number-sign",
+			"begin": "#",
+			"end": "\n"
+		},
+		"keywords": {
+			"patterns": [ 
+				{
+					"name": "keyword.control.chelang",
+					"match": "\\b(?i)(ponele que|tonce|osi|alosumo|agarra por|hasta|de a|tonce|mientras|piquete|segui de largo|hastaaca|tirame)\\b"
+				}, {
+					"name": "keyword.operator.new.chelang",
+					"match": "\\b(?i)(es|seigual|son|nakever|uncachitomeno|uncachitoma|mayoroigual|menoroigual|maomeno|y|o|anda por|ma|meno|por|dividido|ala|moduleame)\\b"
+				}
+			]
+		},
+		"storage": {
+			"name": "storage.chelang",
+			"match": "\\b(?i)(che|definime)\\b"
+		},
+		"singlequoted-strings": {
+			"name": "string.quoted.single.chelang",
+			"begin": "'",
+			"end": "'"
+		},
+		"doublequoted-strings": {
+			"name": "string.quoted.double.chelang",
+			"begin": "\"",
+			"end": "\""
+		},
+		"support-constants": {
+			"name": "constant.language.chelang",
+			"match": "\\b(Milanesa|Macri|Vacio|Inviable|Chamuyo|Posta|Pi)\\b"
+		},
+		"support-functions": {
+			"name": "support.function.chelang",
+			"match": "\\b(Cuchame|CuchameRet|Traeme|TraemeNumerito|Limpiame|clear|EsNumerito|EsTexto|EsLista|EsFuncion|Agregale|Rajale|Metele|TaLargo|Correme|Chorro|Argentima|Boludear|Viborita|ANumerito|AFlotantito|ATextito|FloatYPico|Dolar|Campora|HalloEbribodi|Sumate)\\b"	
+		}
+	}
+}
